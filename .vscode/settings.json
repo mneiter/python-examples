@@ -23,5 +23,8 @@
     // Suppress unnecessary warnings about missing type stubs
     "python.analysis.diagnosticSeverityOverrides": {
         "reportMissingTypeStubs": "none"
-    }
+    },
+    "python.analysis.extraPaths": [
+        "./src/protocol"
+    ]
 }

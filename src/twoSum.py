@@ -1,6 +1,18 @@
 from typing import List
+from abc import ABC, abstractmethod
 
-class Solution:
+class TwoSumInterface(ABC):
+    @abstractmethod
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        pass
+
+class Solution(TwoSumInterface):
+    def __init__(self):
+        print("Solution instance created.")
+
+    def __del__(self):
+        print("Solution instance destroyed.")
+        
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         num_to_index = {}
         for index, num in enumerate(nums):
