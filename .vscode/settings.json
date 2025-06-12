@@ -1,0 +1,27 @@
+{
+    // Set the Python interpreter to the virtual environment
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
+
+    // Enable linting with flake8
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+
+    // Enable type checking with mypy
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--strict"
+    ],
+
+    // Use Black as the code formatter
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+
+    // Enable strict type checking in VS Code analysis
+    "python.analysis.typeCheckingMode": "strict",
+
+    // Suppress unnecessary warnings about missing type stubs
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingTypeStubs": "none"
+    }
+}
