@@ -1,5 +1,6 @@
 from typing import Protocol
 
+
 class Shape(Protocol):
     """Interface for geometric shapes."""
 

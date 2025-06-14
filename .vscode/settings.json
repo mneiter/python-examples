@@ -26,5 +26,5 @@
     },
     "python.analysis.extraPaths": [
         "./src/protocol"
-    ]
+    ]    
 }

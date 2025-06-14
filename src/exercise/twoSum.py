@@ -1,10 +1,12 @@
 from typing import List
 from abc import ABC, abstractmethod
 
+
 class TwoSumInterface(ABC):
     @abstractmethod
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         pass
+
 
 class Solution(TwoSumInterface):
     def __init__(self):
@@ -12,16 +14,17 @@ class Solution(TwoSumInterface):
 
     def __del__(self):
         print("Solution instance destroyed.")
-        
+
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         num_to_index = {}
         for index, num in enumerate(nums):
             complement = target - num
-            if complement in num_to_index:                 
+            if complement in num_to_index:
                 return [num_to_index[complement], index]
             num_to_index[num] = index
         return []
-    
+
+
 class Solution2:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         for i in range(len(nums)):
@@ -30,7 +33,8 @@ class Solution2:
                     return [i, j]
         # Return an empty list if no solution is found
         return []
-    
+
+
 # from twoSum import Solution
 
 # # Example usage:
@@ -65,7 +69,6 @@ class Solution2:
 
 # You can return the answer in any order.
 
- 
 
 # Example 1:
 
@@ -80,7 +83,7 @@ class Solution2:
 
 # Input: nums = [3,3], target = 6
 # Output: [0,1]
- 
+
 
 # Constraints:
 
@@ -88,6 +91,6 @@ class Solution2:
 # -109 <= nums[i] <= 109
 # -109 <= target <= 109
 # Only one valid answer exists.
- 
+
 
 # Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?

@@ -10,5 +10,3 @@ class Rectangle:
 
     def perimeter(self) -> float:
         return 2 * (self.width + self.height)
-    
-
