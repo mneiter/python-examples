@@ -1,18 +1,19 @@
 print("Main script executed.")
 
-from exercise.roman import Solution
+from exercise.longestCommonPrefix import Solution
 
-# Example usage:
-input = "III"
 solution = Solution()
-result = solution.romanToInt(input)
-print(f"Input: {input}, Output: {result}") # Output: 3
-input = "LVIII"
-result = solution.romanToInt(input)
-print(f"Input: {input}, Output: {result}") # Output: 58
-input = "MCMXCIV"
-result = solution.romanToInt(input)
-print(f"Input: {input}, Output: {result}") # Output: 1994
-input = "MMXXIII"
-result = solution.romanToInt(input)
-print(f"Input: {input}, Output: {result}") # Output: 2023
+# strs = ["flower","flow","flight"]
+# print(f"Input: {strs} Output: {solution.longestCommonPrefix(strs)}")
+# strs = ["dog","racecar","car"]
+# print(f"Input: {strs} Output: {solution.longestCommonPrefix(strs)}")
+# strs = ["interspecies", "interstellar", "interstate"]
+# print(f"Input: {strs} Output: {solution.longestCommonPrefix(strs)}")
+# strs = ["throne", "throne"]
+# print(f"Input: {strs} Output: {solution.longestCommonPrefix(strs)}")
+# strs = ["", "b"]
+# print(f"Input: {strs} Output: {solution.longestCommonPrefix(strs)}")
+# strs = ["a"]
+# print(f"Input: {strs} Output: {solution.longestCommonPrefix(strs)}")
+strs = ["ab", "a"]
+print(f"Input: {strs} Output: {solution.longestCommonPrefix(strs)}")
