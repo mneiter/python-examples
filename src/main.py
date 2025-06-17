@@ -1,5 +1,2 @@
 print("Main script executed.")
 
-
-
-
