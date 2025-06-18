@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        stack = []
+        stack: list[str] = []
         mapping = {')': '(', '}': '{', ']': '['}
 
         for char in s:
